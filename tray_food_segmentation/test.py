@@ -58,10 +58,10 @@ def display(display_list):
     plt.show()
 
 
-x_train, y_train = load_data('dataset/train_images/XTrain/', 'dataset/train_masks/yTrain/')
+x_train, y_train = load_data('../dataset/train_images/XTrain/', '../dataset/train_masks/yTrain/')
 train = tf.data.Dataset.from_tensor_slices((x_train, y_train))
 
-x_test, y_test = load_data('dataset/test_images/XTest/', 'dataset/test_masks/yTest/')
+x_test, y_test = load_data('../dataset/test_images/XTest/', '../dataset/test_masks/yTest/')
 test = tf.data.Dataset.from_tensor_slices((x_test, y_test))
 
 print(train)
